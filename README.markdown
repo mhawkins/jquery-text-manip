@@ -26,4 +26,4 @@ Now in your browser, go to
 
    http://0.0.0.0:4567
    
-You'll see two lists.  The input and its formatted output.
+You'll see two lists.  The input and its formatted output.  Click on the h3 elements to expand the list.
