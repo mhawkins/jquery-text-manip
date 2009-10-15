@@ -1,5 +1,8 @@
 $(document).ready(function(){
   
+  $(".values").append("<h2>Grouped Operating Systems Output</h2>")
+  $(".values").append("<div class='processed'></div>")
+  
   var oses = {};
   
   $(".values ul li").each(function() {
@@ -13,7 +16,6 @@ $(document).ready(function(){
    
     oses[major] += "<li>" + os + "</li>";
   });
-  
 
   for( var key in oses) {
     $(".processed").append( "<h3>" + key + "</h3>");
