@@ -19,7 +19,7 @@ $(document).ready(function(){
 
   for( var key in oses) {
     $(".processed").append( "<h3>" + key + "</h3>");
-    $(".processed").append( "<div class='" + key + " os'><ul>" +  oses[key] + "</ul></div>" );
+    $(".processed").append( "<ul class='" + key + "'>"+  oses[key] + "</ul>" );
     $( ".processed ." + key ).hide();
   }
 
