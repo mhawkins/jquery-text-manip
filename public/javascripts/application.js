@@ -14,8 +14,15 @@ $(document).ready(function(){
     oses[major] += "<li>" + os + "</li>";
   });
   
-  // alert(oses["Windows"]);
-  
-  alert( oses.keys() );
 
+  for( var key in oses) {
+    $(".processed").append( "<h3>" + key + "</h3>");
+    $(".processed").append( "<div class='" + key + " os'><ul>" +  oses[key] + "</ul></div>" );
+    $( ".processed ." + key ).hide();
+  }
+
+  $("h3").live("click", function(){
+    $( ".processed ." + $(this).text() ).toggle(300);
+  });
+  
 });
